@@ -1,28 +1,23 @@
 <?php
-
 namespace Database\Seeders;
-
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-
-class MajorsSeeder extends Seeder
+class StudentsSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run(): void
     {
-        DB::table('majors')->insert([
+        DB::table('students')->insert([
             [
-                'name' => 'S1 Teknik Informatika',
-                'code' => '00001',
-                'description' => 'lorem ipsum dolor sit amet consectetur adipiscing elit',
-            ],
-            [
-                'name' => 'S1 Sistem Informasi',
-                'code' => '00002',
-                'description' => 'lorem ipsum dolor sit amet consectetur adipiscing elit',
+                'name' => 'Muhammad Rifky',
+                'student_id_number' => 'F55123091',
+                'email' => 'Rifky@gmail.com',
+                'phone_number' => '6281243060292',
+                'birth_date' => '2005-02-02',
+                'gender' => 'Male',
+                'status' => 'Active',
+                'major_id' => 1,
             ],
         ]);
     }
